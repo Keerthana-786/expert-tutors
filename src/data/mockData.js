@@ -365,6 +365,23 @@ export const ACADEMIC_SERVICES = [
 
 export const INITIAL_EXPERTS = [
   {
+    id: 'exp-100',
+    name: 'Aarav Menon',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+    qualification: 'M.S. in Computer Science & Applied Mathematics',
+    hasPhd: false,
+    isVerified: true,
+    subjectSpecialization: 'Mathematics & Programming, Data Structures, Algorithms, Calculus',
+    primarySubject: 'Computer Science Engineering',
+    experienceYears: 3,
+    languages: ['English', 'Hindi'],
+    availability: 'Available Today',
+    status: 'Active',
+    consultationsCompleted: 120,
+    ratingScore: '4.9/5 • Verified Mentor',
+    bio: 'Dedicated academic mentor helping students master complex programming concepts, data structures, and calculus problem sets with step-by-step logic.',
+  },
+  {
     id: 'exp-101',
     name: 'Dr. Evelyn Vance',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80',

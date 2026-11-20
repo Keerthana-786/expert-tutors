@@ -15,6 +15,7 @@ import GamificationView from './components/GamificationView';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import FaqSection from './components/FaqSection';
+import StudentReviews from './components/StudentReviews';
 import Footer from './components/Footer';
 
 import SpiderIntro from './SpiderIntro';
@@ -231,6 +232,9 @@ export default function App() {
             <Hero
               onGetHelp={() => handleOpenGetHelp()}
               onExploreSubjects={() => handleNavigate('subjects')}
+              onSelectTutor={(tutor) => {
+                handleOpenGetHelp({ name: tutor.primarySubject || 'Mathematics', categoryName: 'Science and Mathematics' });
+              }}
             />
 
             <SubjectDiscovery
@@ -239,6 +243,11 @@ export default function App() {
               onSelectExpert={(exp) => {
                 handleOpenGetHelp({ name: exp.primarySubject, categoryName: 'Science and Mathematics' });
               }}
+            />
+
+            {/* Real Students. Real Experiences. Real Success. */}
+            <StudentReviews
+              onOpenGetHelp={() => handleOpenGetHelp()}
             />
 
             <ExpertNetwork
